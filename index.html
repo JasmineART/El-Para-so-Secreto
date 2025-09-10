@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Paraíso Secreto | Luxury Bed & Breakfast</title>
+    <!-- Use Tailwind CSS for a clean, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8; /* Elegant Cream */
+            color: #4A4A4A;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .header-bg {
+            background-color: #F8F8F8;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .gold-text { color: #FCD12A; }
+        .peach-text { color: #FFCBA4; }
+        .teal-text { color: #B0E0E6; }
+        .gold-bg { background-color: #FCD12A; }
+        .peach-bg { background-color: #FFCBA4; }
+
+    </style>
+</head>
+<body class="bg-[#F8F8F8]">
+
+    <!-- Navigation Header -->
+    <header class="header-bg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold gold-text">El Paraíso Secreto</a>
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#suites" class="hover:text-gray-900 transition-colors">Suites</a>
+                <a href="#dining" class="hover:text-gray-900 transition-colors">Dining</a>
+                <a href="#experiences" class="hover:text-gray-900 transition-colors">Experiences</a>
+                <a href="#contact" class="hover:text-gray-900 transition-colors">Book Now</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#F8F8F8] p-4 text-center">
+            <a href="#suites" class="block py-2 text-lg font-medium hover:bg-gray-200 rounded-md transition-colors">Suites</a>
+            <a href="#dining" class="block py-2 text-lg font-medium hover:bg-gray-200 rounded-md transition-colors">Dining</a>
+            <a href="#experiences" class="block py-2 text-lg font-medium hover:bg-gray-200 rounded-md transition-colors">Experiences</a>
+            <a href="#contact" class="block py-2 text-lg font-medium hover:bg-gray-200 rounded-md transition-colors">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('hotel.png');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative text-center p-6 z-10">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight drop-shadow-lg gold-text">El Paraíso Secreto</h1>
+            <p class="mt-4 text-xl md:text-2xl italic font-medium drop-shadow-lg">Where Paradise Finds You</p>
+            <a href="#contact" class="mt-8 inline-block px-8 py-4 peach-bg text-black font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300">
+                Plan Your Escape
+            </a>
+        </div>
+    </section>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container mx-auto py-20 px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">A Curated Experience</h2>
+        <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+            Nestled in the heart of the Dominican Republic, El Paraíso Secreto offers an intimate retreat designed for the discerning traveler. We believe in providing an effortless, all-inclusive luxury experience where every detail is considered, allowing you to simply relax and let paradise find you.
+        </p>
+    </section>
+
+    <!-- Suites Section -->
+    <section id="suites" class="bg-[#FAF0E6] py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Our Luxury Suites</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/800x600/FFCBA4/ffffff?text=Elegant+Suite" alt="Luxury suite interior" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl font-semibold mb-4 gold-text">Oceanfront Sanctuary</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Each suite is a private sanctuary with a breathtaking ocean view. Wake up to the sound of waves, unwind in your private spa-like bathroom, and step out onto your secluded balcony to embrace the beauty of the Caribbean.
+                    </p>
+                    <a href="#contact" class="inline-block px-6 py-3 peach-bg text-black font-medium rounded-full hover:shadow-lg transition-shadow">
+                        View Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Gourmet Dining</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center flex-col-reverse md:flex-row-reverse">
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/800x600/FCD12A/ffffff?text=Gourmet+Dining" alt="Gourmet meal on a table" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="text-center md:text-left order-2 md:order-1">
+                    <h3 class="text-3xl font-semibold mb-4 gold-text">Culinary Delights</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Savor a journey of flavors with our farm-to-table culinary experiences. Our chefs craft exquisite dishes using the freshest local ingredients, from intimate candlelit dinners on the beach to vibrant cocktails in our stylish lounges.
+                    </p>
+                    <a href="#contact" class="inline-block px-6 py-3 peach-bg text-black font-medium rounded-full hover:shadow-lg transition-shadow">
+                        Explore Menus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="bg-[#FAF0E6] py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Tailored Experiences</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-5xl mb-4">🏝️</div>
+                    <h3 class="text-2xl font-semibold mb-2 gold-text">Private Beach Access</h3>
+                    <p class="leading-relaxed">A secluded slice of paradise, reserved exclusively for our guests, with attentive service at your fingertips.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-5xl mb-4">🎟️</div>
+                    <h3 class="text-2xl font-semibold mb-2 gold-text">Exclusive Entertainment</h3>
+                    <p class="leading-relaxed">Enjoy complimentary tickets to the best local concerts and VIP access to the most sought-after events.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-5xl mb-4">🍹</div>
+                    <h3 class="text-2xl font-semibold mb-2 gold-text">Unlimited Refreshments</h3>
+                    <p class="leading-relaxed">Indulge in a curated selection of fine wines, signature cocktails, and beverages, all part of your experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready for your escape?</h2>
+        <p class="text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+            Let us craft the perfect Dominican getaway for you. Click below to view availability and begin your journey to paradise.
+        </p>
+        <a href="#" class="inline-block px-10 py-5 gold-bg text-black font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300">
+            Book Your Stay
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1C3E5A] text-white py-12 px-6">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h4 class="text-xl font-semibold mb-4 peach-text">El Paraíso Secreto</h4>
+                <p>Luxury Bed & Breakfast</p>
+                <p>Dominican Republic</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4 peach-text">Contact</h4>
+                <p>Email: info@elparaisosecreto.com</p>
+                <p>Phone: +1 (809) 555-1234</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4 peach-text">Follow Us</h4>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="hover:text-gold-400 transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-gold-400 transition-colors">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>&copy; 2024 El Paraíso Secreto. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
